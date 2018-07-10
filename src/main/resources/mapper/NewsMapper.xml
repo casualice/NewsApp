@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newsApp.dao.newsDao">
+
+    <resultMap id="resultMap" type="com.newsApp.entity.News">
+        <result property="newsNo" column="NewsNo" jdbcType="INTEGER"/>
+        <result property="newsTitle" column="NewsTitle" jdbcType="VARCHAR"/>
+        <result property="newsUrl" column="NewsURL" jdbcType="VARCHAR"/>
+        <result property="newsSource" column="NewsSource" jdbcType="VARCHAR"/>
+        <result property="newsLabelNo" column="NewsLabelNo" jdbcType="INTEGER"/>
+        <result property="newsAreaNo" column="NewsAreaNo" jdbcType="INTEGER"/>
+        <result property="newsIntro" column="NewsIntro" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="tableName">News</sql>
+    <sql id="columns">
+        NewsNo,
+        NewsTitle,
+        NewsURL,
+        NewsSource,
+        NewsLabelNo,
+        NewsAreaNo,
+        NewsIntro
+    </sql>
+
+    <sql id="columns2">
+        NewsTitle,
+        NewsURL,
+        NewsSource,
+        NewsLabelNo,
+        NewsAreaNo,
+        NewsIntro
+    </sql>
+
+
+    <!-- single entity save -->
+    <select id="getNewsByNo" parameterType="java.lang.Integer" resultType="resultMap">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+        where 1=1
+        <if test="LabelNo!=null and LabelNo != ''">
+            AND NewsLabelNo = #{LabelNo,jdbcType=INTEGET}
+        </if>
+        <if test="AreaNo!=null and AreaNo!= ''">
+            AND newsAreaNo = #{AreaNo,jdbcType=INTEGET}
+        </if>
+    </select>
+
+    <!-- get entity by id -->
+    <insert id="addNews" parameterType="com.newsApp.entity.News">
+        insert into
+        <include refid="tableName"/>
+        (<include refid="columns2"/>) values
+        ( #{news.newsTitle},
+        #{news.newsUrl},
+        #{news.newsSource},
+        #{news.newsLabelNo},
+        #{news.newsAreaNo},
+        #{news.newsIntro})
+    </insert>
+
+    <update id="updateNews" parameterType="com.newsApp.entity.News">
+        update
+        <include refid="tableName"/>
+        set
+        NewsTitle=#{news.newsTitle},
+        NewsURL=#{news.newsUrl},
+        NewsSource=#{news.newsSource},
+        NewsLabelNo=#{news.newsLabelNo},
+        NewsAreaNo=#{news.newsAreaNo},
+        NewsIntro=#{news.newsIntro}
+    </update>
+
+    <select id="getNewsById" parameterType="java.lang.Integer" resultType="resultMap">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+        where
+        NewsNo = #{id}
+    </select>
+
+    <delete id="deleteById">
+        DELETE FROM
+        <include refid="tableName"/>
+        WHERE NewsNo=#{id}
+    </delete>
+
+    <select id="getTotalItemsCount" parameterType="string" resultType="java.lang.Integer">
+        SELECT COUNT(1)
+        FROM <include refid="tableName"/>
+        WHERE 1=1
+        <if test="noticeName != null">
+            AND name=#{noticeName,jdbcType=VARCHAR}
+        </if>
+    </select>
+
+    <select id="getNoticesByPage" resultMap="resultMap">
+        SELECT <include refid="columns"/>
+        FROM <include refid="tableName"/>
+        WHERE 1=1
+        <if test="NoticeName != null">
+            AND name LIKE CONCAT('%',#{NoticeName},'%' )
+        </if>
+        LIMIT #{page.startIndex,jdbcType=INTEGER},#{page.pageSize,jdbcType=INTEGER}
+    </select>
+
+    <select id="getNoticeIdListByStudentId" resultType="java.lang.String" parameterType="string">
+        SELECT notice_id
+        FROM
+        <include refid="tableName"/>
+        WHERE
+        student_id=#{student_id}
+    </select>
+
+</mapper>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newsApp.dao.userDao">
+
+    <resultMap id="resultMap" type="com.newsApp.entity.User">
+        <result property="userNo" column="UserNo" jdbcType="INTEGER"/>
+        <result property="wechatId" column="WechatID" jdbcType="VARCHAR"/>
+        <result property="userName" column="UserName" jdbcType="VARCHAR"/>
+        <result property="userTime" column="UserTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="tableName">User</sql>
+    <sql id="columns">
+        UserNo,
+        wechatId,
+        userName,
+        userTime
+    </sql>
+
+    <sql id="columns2">
+        wechatId,
+        userName,
+        userTime
+    </sql>
+
+
+    <!-- single entity save -->
+    <select id="getUserById" parameterType="java.lang.Integer" resultType="resultMap">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+        where
+        userNo = #{id}
+    </select>
+
+    <!-- get entity by id -->
+    <insert id="addUser" parameterType="com.newsApp.entity.User">
+        insert into
+        <include refid="tableName"/>
+        (<include refid="columns2"/>) values
+        (#{user.wechatId},
+        #{user.userName},
+        #{user.userTime})
+    </insert>
+
+</mapper>
