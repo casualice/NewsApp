@@ -1,11 +1,14 @@
 package com.newsApp.controller;
 
 import com.newsApp.common.JsonData;
+import com.newsApp.dto.LabelAndAreaNo;
 import com.newsApp.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -15,11 +18,11 @@ public class NewsController {
 
     @RequestMapping(value = {"/newsList"}, method = RequestMethod.GET)
     @ResponseBody
-    public JsonData getNews(int labelNo,int areaNo){
-        return newsService.getNews(areaNo,labelNo);
+    public JsonData getNews(LabelAndAreaNo labelAndAreaNo){
+        return newsService.getNews(labelAndAreaNo);
     }
 
-    @RequestMapping(value = {"/share"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/share"}, method = RequestMethod.GET)
     @ResponseBody
     public JsonData shareNews(int newsNo){
         return newsService.share(newsNo);

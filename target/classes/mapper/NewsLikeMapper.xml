@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newsApp.dao.NewsLikeDao">
+
+    <resultMap id="resultMap" type="com.newsApp.entity.newsLike">
+        <result property="NLNO" column="NLNo" jdbcType="INTEGER"/>
+        <result property="userNo" column="UserNo" jdbcType="INTEGER"/>
+        <result property="newsNo" column="NewsNo" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="tableName">NewsLike</sql>
+    <sql id="columns">
+        NLNo,
+        UserNo,
+        NewsNo
+    </sql>
+
+    <sql id="columns2">
+        UserNo,
+        NewsNo
+    </sql>
+
+    <insert id="setLike">
+        insert into
+        <include refid="tableName"/>
+        (<include refid="columns2"/>) values
+        (#{userNo},#{newsNo})
+    </insert>
+
+    <select id="likeCount" parameterType="int" resultType="int">
+        select
+        COUNT(1)
+        from
+        <include refid="tableName"/>
+        where
+        UserNo = #{userNo}
+    </select>
+
+</mapper>

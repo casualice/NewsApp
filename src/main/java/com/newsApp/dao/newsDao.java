@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface newsDao {
 
-    List<News> getNewsByNo(@Param("LabelDao") int LabelNo,@Param("AreaNo") int AreaNo);
+    List<News> getNewsByNo(@Param("LabelNo") int LabelNo,@Param("AreaNo") int AreaNo);
 
     void addNews(@Param("news") News news);
 

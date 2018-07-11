@@ -3,6 +3,7 @@ package com.newsApp.service.impl;
 import com.newsApp.common.JsonData;
 import com.newsApp.dao.NewsLikeDao;
 import com.newsApp.dao.newsDao;
+import com.newsApp.dto.LabelAndAreaNo;
 import com.newsApp.entity.News;
 import com.newsApp.entity.NewsParam;
 import com.newsApp.service.NewsService;
@@ -22,10 +23,10 @@ public class NewsServiceImpl implements NewsService {
     NewsLikeDao newsLikeDao;
 
     @Override
-    public JsonData getNews(int areaNo, int labelNo) {
+    public JsonData getNews(LabelAndAreaNo labelAndAreaNo) {
         List<News> news = null;
         try{
-            news = newsDao.getNewsByNo(labelNo,areaNo);
+            news = newsDao.getNewsByNo(labelAndAreaNo.getLabelNo(),labelAndAreaNo.getAreaNo());
             List<NewsParam> newsParams = new LinkedList<NewsParam>();
             Iterator iterator = news.iterator();
             while (iterator.hasNext()){
@@ -38,7 +39,7 @@ public class NewsServiceImpl implements NewsService {
                 newsParam.setLikeNum(newsLikeDao.likeCount(n.getNewsNo()));
                 newsParams.add(newsParam);
             }
-            JsonData.success(newsParams,"获取新闻成功！");
+            return JsonData.success(newsParams,"获取新闻成功！");
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -51,7 +52,7 @@ public class NewsServiceImpl implements NewsService {
     public JsonData share(int newsNo) {
         try {
             String shareMessage = newsDao.getNewsById(newsNo).getNewsUrl();
-            JsonData.success(shareMessage,"分享成功！");
+            return JsonData.success(shareMessage,"分享成功！");
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -62,7 +63,7 @@ public class NewsServiceImpl implements NewsService {
     public JsonData like(int newsNo,int userNo) {
         try {
             newsLikeDao.setLike(userNo,newsNo);
-            JsonData.success("点赞成功！");
+            return JsonData.success("点赞成功！");
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newsApp.dao.AreaDao">
+
+    <resultMap id="resultMap" type="com.newsApp.entity.Area">
+        <result property="areaNo" column="AreaNo" jdbcType="INTEGER"/>
+        <result property="areaName" column="AreaName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="tableName">Area</sql>
+    <sql id="columns">
+        AreaNo,
+        AreaName
+    </sql>
+
+    <select id="getArea" parameterType="int" resultType="string">
+        select
+        AreaName
+        from
+        <include refid="tableName"/>
+        where
+        AreaNo = #{areaNo}
+    </select>
+
+
+</mapper>

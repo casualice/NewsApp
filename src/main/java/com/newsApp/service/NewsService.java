@@ -1,9 +1,10 @@
 package com.newsApp.service;
 
 import com.newsApp.common.JsonData;
+import com.newsApp.dto.LabelAndAreaNo;
 
 public interface NewsService {
-    JsonData getNews(int areaNo,int labelNo);
+    JsonData getNews(LabelAndAreaNo labelAndAreaNo);
 
     JsonData share(int newsNo);
 

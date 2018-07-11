@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newsApp.dao.LabelDao">
+
+    <resultMap id="resultMap" type="com.newsApp.entity.Label">
+        <result property="labelNo" column="LabelNo" jdbcType="INTEGER"/>
+        <result property="labelName" column="LabelName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="tableName">Label</sql>
+    <sql id="columns">
+        LabelNo,
+        LabelName
+    </sql>
+
+    <select id="getLabel" parameterType="int" resultType="string">
+        select
+        LabelName
+        from
+        <include refid="tableName"/>
+        where
+        LabelNo = #{labelNo}
+    </select>
+
+
+</mapper>
