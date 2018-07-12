@@ -10,7 +10,7 @@ import java.util.List;
 public interface UserService {
     public JsonData getUserMessage();
 
-    public JsonData changeArea(List<Area> areas);
+    public JsonData changeArea(List<Integer> areaNos) throws Exception;
 
-    public JsonData changeLabel(List<Label> labels);
+    public JsonData changeLabel(List<Integer> labelNos) throws Exception;
 }

@@ -23,5 +23,32 @@
         LabelNo = #{labelNo}
     </select>
 
+    <select id="getAllLabels" resultType="com.newsApp.entity.Label">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+    </select>
 
+    <insert id="addLabel" parameterType="string">
+        insert into
+        <include refid="tableName"/>
+        (LabelName) values (#{labelName})
+    </insert>
+
+    <delete id="deleteLabel" parameterType="int">
+        delete from
+        <include refid="tableName"/>
+        where
+        LabelNo = #{labelNo}
+    </delete>
+
+    <select id="getByName" parameterType="string" resultType="com.newsApp.entity.Label">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+        where
+        LabelName = #{labelName}
+    </select>
 </mapper>

@@ -70,13 +70,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public JsonData changeArea(List<Area> areas) {
+    public JsonData changeArea(List<Integer> areas) throws Exception{
         try {
             areaChooseDao.deleteByUserNo(1);
             Iterator iterator = areas.iterator();
             while (iterator.hasNext()){
-                Area area = (Area) iterator.next();
-                areaChooseDao.setAreaChoose(area.getAreaNo());
+                int area = (int) iterator.next();
+                if (areaDao.getArea(area)==null)
+                    throw new Exception("地区不存在！");
+                areaChooseDao.setAreaChoose(area);
             }
             return JsonData.success("修改用户地区信息成功！");
         }catch (Exception e){
@@ -87,13 +89,16 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public JsonData changeLabel(List<Label> labels) {
+    public JsonData changeLabel(List<Integer> labels) throws Exception{
         try {
             labelChooseDao.delete(1);
             Iterator iterator = labels.iterator();
             while (iterator.hasNext()){
-                Label label = (Label) iterator.next();
-                labelChooseDao.set(1,label.getLabelNo());
+                int label = (int) iterator.next();
+                if (labelDao.getLabel(label)==null) {
+                    throw new Exception("标签不存在！");
+                }
+                labelChooseDao.set(1,label);
             }
             return JsonData.success("修改用户标签信息成功！");
         }catch (Exception e){

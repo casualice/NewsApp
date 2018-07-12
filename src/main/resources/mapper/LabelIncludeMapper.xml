@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newsApp.dao.LabelIncludeDao">
+
+    <resultMap id="resultMap" type="com.newsApp.entity.LabelInclude">
+        <result property="LINO" column="LINo" jdbcType="INTEGER"/>
+        <result property="newsNo" column="NewsNo" jdbcType="INTEGER"/>
+        <result property="labelNo" column="LabelNo" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="tableName">AreaInclude</sql>
+    <sql id="columns">
+        LINo,
+        NewsNo,
+        LabelNo
+    </sql>
+
+    <sql id="columns2">
+        NewsNo,
+        LabelNo
+    </sql>
+
+    <!--<insert id="setAreaChoose" parameterType="java.lang.Integer">-->
+    <!--insert into-->
+    <!--<include refid="tableName"/>-->
+    <!--(<include refid="columns2"/>) values-->
+    <!--(1,#{areaNo})-->
+    <!--</insert>-->
+
+    <select id="getByNewsNo" parameterType="java.lang.Integer" resultType="com.newsApp.entity.LabelInclude">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+        where
+        NewsNo = #{newsNo}
+    </select>
+
+    <select id="getByLabelNo" parameterType="java.lang.Integer" resultMap="resultMap">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+        where
+        LabelNo = #{labelNo}
+    </select>
+
+    <!--<delete id="deleteByUserNo" parameterType="java.lang.Integer">-->
+    <!--DELETE FROM-->
+    <!--<include refid="tableName"/>-->
+    <!--WHERE UserNo=#{userNo}-->
+    <!--</delete>-->
+
+</mapper>

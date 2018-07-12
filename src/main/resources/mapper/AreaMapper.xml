@@ -23,5 +23,32 @@
         AreaNo = #{areaNo}
     </select>
 
+    <select id="getAllAreas" resultType="com.newsApp.entity.Area">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+    </select>
 
+    <insert id="addArea" parameterType="string">
+        insert into
+        <include refid="tableName"/>
+        (AreaName) values (#{areaName})
+    </insert>
+
+    <delete id="deleteArea" parameterType="int">
+        delete from
+        <include refid="tableName"/>
+        where
+        AreaNo = #{areaNo}
+    </delete>
+
+    <select id="getByName" parameterType="string" resultType="com.newsApp.entity.Area">
+        select
+        <include refid="columns"/>
+        from
+        <include refid="tableName"/>
+        where
+        AreaName = #{areaName}
+    </select>
 </mapper>
