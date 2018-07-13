@@ -17,9 +17,5 @@ public class News {
 
     private String newsSource;
 
-    private int newsLabelNo;
-
-    private int newsAreaNo;
-
     private String newsIntro;
 }

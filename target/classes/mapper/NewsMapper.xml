@@ -8,8 +8,6 @@
         <result property="newsTitle" column="NewsTitle" jdbcType="VARCHAR"/>
         <result property="newsUrl" column="NewsURL" jdbcType="VARCHAR"/>
         <result property="newsSource" column="NewsSource" jdbcType="VARCHAR"/>
-        <result property="newsLabelNo" column="NewsLabelNo" jdbcType="INTEGER"/>
-        <result property="newsAreaNo" column="NewsAreaNo" jdbcType="INTEGER"/>
         <result property="newsIntro" column="NewsIntro" jdbcType="VARCHAR"/>
     </resultMap>
 
@@ -19,8 +17,6 @@
         NewsTitle,
         NewsURL,
         NewsSource,
-        NewsLabelNo,
-        NewsAreaNo,
         NewsIntro
     </sql>
 
@@ -28,8 +24,6 @@
         NewsTitle,
         NewsURL,
         NewsSource,
-        NewsLabelNo,
-        NewsAreaNo,
         NewsIntro
     </sql>
 
@@ -40,13 +34,13 @@
         <include refid="columns"/>
         from
         <include refid="tableName"/>
-        where 1=1
-        <if test="LabelNo!=null and LabelNo != ''">
-            AND NewsLabelNo = #{LabelNo,jdbcType=INTEGER}
-        </if>
-        <if test="AreaNo!=null and AreaNo!= ''">
-            AND newsAreaNo = #{AreaNo,jdbcType=INTEGER}
-        </if>
+        <!--where 1=1-->
+        <!--<if test="LabelNo!=null and LabelNo != ''">-->
+            <!--AND NewsLabelNo = #{LabelNo,jdbcType=INTEGER}-->
+        <!--</if>-->
+        <!--<if test="AreaNo!=null and AreaNo!= ''">-->
+            <!--AND newsAreaNo = #{AreaNo,jdbcType=INTEGER}-->
+        <!--</if>-->
     </select>
 
     <!-- get entity by id -->
@@ -57,8 +51,6 @@
         ( #{news.newsTitle},
         #{news.newsUrl},
         #{news.newsSource},
-        #{news.newsLabelNo},
-        #{news.newsAreaNo},
         #{news.newsIntro})
     </insert>
 
@@ -69,8 +61,6 @@
         NewsTitle=#{news.newsTitle},
         NewsURL=#{news.newsUrl},
         NewsSource=#{news.newsSource},
-        NewsLabelNo=#{news.newsLabelNo},
-        NewsAreaNo=#{news.newsAreaNo},
         NewsIntro=#{news.newsIntro}
     </update>
 
@@ -106,14 +96,6 @@
             AND name LIKE CONCAT('%',#{NoticeName},'%' )
         </if>
         LIMIT #{page.startIndex,jdbcType=INTEGER},#{page.pageSize,jdbcType=INTEGER}
-    </select>
-
-    <select id="getNoticeIdListByStudentId" resultType="java.lang.String" parameterType="string">
-        SELECT notice_id
-        FROM
-        <include refid="tableName"/>
-        WHERE
-        student_id=#{student_id}
     </select>
 
 </mapper>

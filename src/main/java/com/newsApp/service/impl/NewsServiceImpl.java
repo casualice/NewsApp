@@ -1,15 +1,12 @@
 package com.newsApp.service.impl;
 
 import com.newsApp.common.JsonData;
-import com.newsApp.dao.AreaIncludeDao;
-import com.newsApp.dao.LabelIncludeDao;
-import com.newsApp.dao.NewsLikeDao;
-import com.newsApp.dao.newsDao;
+import com.newsApp.dao.*;
 import com.newsApp.dto.LabelAndAreaNo;
 import com.newsApp.entity.*;
 import com.newsApp.service.NewsService;
-import io.swagger.annotations.Api;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.*;
@@ -28,12 +25,27 @@ public class NewsServiceImpl implements NewsService {
     @Resource
     LabelIncludeDao labelIncludeDao;
 
+    @Resource
+    AreaDao areaDao;
+
+    @Resource
+    LabelDao labelDao;
+
     @Override
+    @Transactional
     public JsonData getNews(LabelAndAreaNo labelAndAreaNo) {
-        List<News> news = null;
+        List<News> news = new LinkedList<>();
         try{
-            List<AreaInclude> areaIncludes = areaIncludeDao.getByAreaNo(labelAndAreaNo.getAreaNo());
-            List<LabelInclude> labelIncludes = labelIncludeDao.getByLabelNo(labelAndAreaNo.getLabelNo());
+            List<AreaInclude> areaIncludes = null;
+            List<LabelInclude> labelIncludes = null;
+            if(labelAndAreaNo.getAreaNo()!=0)
+                areaIncludes = areaIncludeDao.getByAreaNo(labelAndAreaNo.getAreaNo());
+            else
+                areaIncludes = areaIncludeDao.getAll();
+            if(labelAndAreaNo.getLabelNo()!=0)
+                labelIncludes = labelIncludeDao.getByLabelNo(labelAndAreaNo.getLabelNo());
+            else
+                labelIncludes = labelIncludeDao.getAll();
             Set<Integer> areaNos = new HashSet<>();
             Set<Integer> labelNos = new HashSet<>();
             Iterator it1 = areaIncludes.iterator();
@@ -42,14 +54,18 @@ public class NewsServiceImpl implements NewsService {
                 int areaNo = areaInclude.getNewsNo();
                 areaNos.add(areaNo);
             }
-            Iterator it2 = areaIncludes.iterator();
+            Iterator it2 = labelIncludes.iterator();
             while (it2.hasNext()){
                 LabelInclude labelInclude = (LabelInclude) it2.next();
                 int labelNo = labelInclude.getNewsNo();
                 labelNos.add(labelNo);
             }
             areaNos.retainAll(labelNos);
-            news = newsDao.getNewsByNo(labelAndAreaNo.getLabelNo(),labelAndAreaNo.getAreaNo());
+            Iterator it3 = areaNos.iterator();
+            while (it3.hasNext()){
+                int newsNo = (int) it3.next();
+                news.add(newsDao.getNewsById(newsNo));
+            }
             List<NewsParam> newsParams = new LinkedList<NewsParam>();
             Iterator iterator = news.iterator();
             while (iterator.hasNext()){
@@ -60,6 +76,10 @@ public class NewsServiceImpl implements NewsService {
                         newsSource(n.getNewsSource()).newsTitle(n.getNewsTitle())
                         .newsUrl(n.getNewsUrl()).build();
                 newsParam.setLikeNum(newsLikeDao.likeCount(n.getNewsNo()));
+                newsParam.setNewsAreaNo(areaIncludeDao.getByNewsNo(n.getNewsNo()).getAreaNo());
+                newsParam.setNewsLabelNo(labelIncludeDao.getByNewsNo(n.getNewsNo()).getLabelNo());
+                newsParam.setLabelName(labelDao.getLabel(newsParam.getNewsLabelNo()));
+                newsParam.setAreaName(areaDao.getArea(newsParam.getNewsAreaNo()));
                 newsParams.add(newsParam);
             }
             return JsonData.success(newsParams,"获取新闻成功！");

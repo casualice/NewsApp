@@ -9,4 +9,5 @@ import java.util.List;
 public interface LabelIncludeDao {
     LabelInclude getByNewsNo(int newsNo);
     List<LabelInclude> getByLabelNo(int labelNo);
+    List<LabelInclude> getAll();
 }

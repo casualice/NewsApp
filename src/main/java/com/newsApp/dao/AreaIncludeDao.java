@@ -10,4 +10,6 @@ public interface AreaIncludeDao {
     AreaInclude getByNewsNo(int newsNo);
 
     List<AreaInclude> getByAreaNo(int areaNo);
+
+    List<AreaInclude> getAll();
 }

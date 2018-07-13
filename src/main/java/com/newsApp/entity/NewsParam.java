@@ -16,7 +16,11 @@ public class NewsParam {
 
     private String newsSource;
 
+    private String labelName;
+
     private int newsLabelNo;
+
+    private String areaName;
 
     private int newsAreaNo;
 
