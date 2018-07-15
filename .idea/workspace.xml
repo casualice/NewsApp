@@ -2,62 +2,130 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f296c4-1224-49fc-af8a-8a8e22939337" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/controller/SysController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/amazeui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/amazeui.flat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/amazeui.flat.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/amazeui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/app-icon72x72@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/admin-chrome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/admin-firefox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/admin-ie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/admin-opera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/admin-safari.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/adminPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/blogPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/landing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/landingPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/loginPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/examples/sidebarPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/i/startup-640x1096.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/amazeui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/amazeui.legacy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/amazeui.legacy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/amazeui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/amazeui.widgets.helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/amazeui.widgets.helper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/handlebars.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/polyfill/rem.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/polyfill/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-app-green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-app-orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-app-purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-app-red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-app-yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-index-green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-index-orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-index-purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-index-red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-index-yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/css-intro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/owl.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/icon-7-stroke/css/helper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/icon-7-stroke/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/icon-7-stroke/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/client.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/company.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/feature-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/feature2-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/header-phone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/intro-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/loading.GIF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/screenshot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/ekko-lightbox-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/log.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updatePage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newsApp/dao/AreaIncludeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/dao/AreaIncludeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelIncludeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelIncludeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newsApp/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/entity/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newsApp/entity/NewsParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/entity/NewsParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newsApp/dao/newsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/dao/newsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newsApp/dto/LabelAndAreaNo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/dto/LabelAndAreaNo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newsApp/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/service/NewsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/newsApp/service/impl/NewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newsApp/service/impl/NewsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AreaIncludeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AreaIncludeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LabelIncludeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LabelIncludeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/NewsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/NewsApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/common/AbstractPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/common/AbstractPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/common/JsonData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/common/JsonData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/common/TailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/common/TailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/HelpStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/HelpStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/OrderStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/PayKind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/PayKind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/ResultCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/ResultCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/ShowStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/common/enums/ShowStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/controller/NewsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/dao/AreaChooseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/dao/AreaChooseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/dao/AreaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/dao/AreaDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/dao/LabelChooseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/dao/LabelChooseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/dao/LabelDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/dao/LabelDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/dao/NewsLikeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/dao/NewsLikeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/NewsApp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/NewsApp.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/NewsApp.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/NewsApp.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/dao/newsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/dao/newsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/dao/userDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/dao/userDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/dto/LabelAndAreaNo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/dto/LabelAndAreaNo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/Area$AreaBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/Area$AreaBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/Area.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/Label$LabelBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/Label$LabelBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/Label.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/Label.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/News$NewsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/News$NewsBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/News.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/NewsParam$NewsParamBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/NewsParam$NewsParamBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/NewsParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/NewsParam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/UserMessage$UserMessageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/UserMessage$UserMessageBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/UserMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/UserMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/areaChoose$areaChooseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/areaChoose$areaChooseBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/areaChoose.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/areaChoose.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/labelChoose$labelChooseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/labelChoose$labelChooseBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/labelChoose.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/labelChoose.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/newsLike$newsLikeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/newsLike$newsLikeBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/entity/newsLike.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/entity/newsLike.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/service/AreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/service/AreaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/service/LabelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/service/LabelService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/service/NewsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/service/NewsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/service/impl/AreaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/service/impl/AreaServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/service/impl/LabelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/service/impl/LabelServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/service/impl/NewsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/service/impl/NewsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newsApp/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newsApp/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/NewsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/NewsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,23 +138,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/NewsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NewsServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/service/impl/NewsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="81" column="79" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="79" />
+            <state relative-caret-position="515">
+              <caret line="179" column="13" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,11 +150,87 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/NewsParam.java">
+      <file leaf-file-name="LabelDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="378">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LabelIncludeDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelIncludeDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/service/NewsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/table.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="160" column="75" selection-start-line="160" selection-start-column="75" selection-end-line="160" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/SysController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="864">
+              <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/NewsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updatePage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/updatePage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="100" column="84" selection-start-line="100" selection-start-column="84" selection-end-line="100" selection-end-column="84" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LabelAndAreaNo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dto/LabelAndAreaNo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -108,16 +240,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="Tag Library Descriptor" />
+        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>INTEGET</find>
+      <find>src</find>
+      <find>thyme</find>
+      <find>新闻</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,27 +262,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/news/NewsApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/news/entity/areaChoose.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/news/entity/labelChoose.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/news/entity/newsLike.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/news/entity/News.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/news/dao/newsDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.tld" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/userDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/entity/UserMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelChooseDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelNo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/AreaChooseDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/AreaMapper.tld" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/LabelChooseDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/NewsLikeDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/NewsLikeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/newsDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dto/LabelAndAreaNo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/service/NewsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsApp/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/AreaDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelDao.java" />
@@ -169,13 +286,32 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/AreaChooseMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/LabelIncludeMapper.tld" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsApp/entity/News.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/AreaIncludeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelIncludeDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/LabelIncludeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/AreaIncludeMapper.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsApp/entity/NewsParam.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin-index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin-404.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin-form.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin-log.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin-table.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin-user.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/404.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/form.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/log.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dto/LabelAndAreaNo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/newsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/controller/SysController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/table.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/updatePage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/service/NewsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelIncludeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsApp/service/impl/NewsServiceImpl.java" />
       </list>
     </option>
@@ -189,10 +325,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1390" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -201,6 +337,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,15 +378,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="newsApp" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewsApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewsApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="newsApp" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,15 +388,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="newsApp" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewsApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewsApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="newsApp" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NewsApp" type="b2602c69:ProjectViewProjectNode" />
@@ -313,16 +432,32 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NewsApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewsApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -335,13 +470,15 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.newsApp.entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NewsApp\src\main\resources\templates" />
+      <recent name="D:\NewsApp\src\main\resources\static" />
       <recent name="D:\NewsApp\src\main\resources\mapper" />
       <recent name="D:\NewsApp\src\main\resources" />
       <recent name="D:\NewsApp\src\main\java" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.newsApp.entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -426,19 +563,23 @@
       <workItem from="1531289107663" duration="7372000" />
       <workItem from="1531375104853" duration="9038000" />
       <workItem from="1531387583596" duration="3997000" />
-      <workItem from="1531460099704" duration="1545000" />
+      <workItem from="1531460099704" duration="8102000" />
+      <workItem from="1531489503865" duration="4520000" />
+      <workItem from="1531546707168" duration="11873000" />
+      <workItem from="1531560046172" duration="3941000" />
+      <workItem from="1531633631188" duration="963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53576000" />
+    <option name="totallyTimeSpent" value="81430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32980973" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -462,10 +603,10 @@
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32980973" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
@@ -513,76 +654,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/common/enums/OrderStatus.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/News.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/userDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/UserMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/Area.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/labelChoose.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/newsLike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/NewsLikeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
@@ -594,9 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-33">
           <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,30 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="54" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/Label.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dto/LabelAndAreaNo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/service/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -656,9 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,9 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,24 +721,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/AreaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/LabelController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -742,35 +770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/newsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AreaChooseMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/NewsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelIncludeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/AreaIncludeDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -816,54 +812,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="42" column="17" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="42" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="809">
           <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/NewsParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -874,6 +826,176 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/NewsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/fonts/icon-7-stroke/css/helper.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350">
+          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3838">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/Label.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/AreaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/newsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/entity/NewsParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-838">
+          <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dto/LabelAndAreaNo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/controller/SysController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/updatePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="100" column="84" selection-start-line="100" selection-start-column="84" selection-end-line="100" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="160" column="75" selection-start-line="160" selection-start-column="75" selection-end-line="160" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/service/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -881,10 +1003,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/dao/LabelIncludeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsApp/service/impl/NewsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="81" column="79" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="79" />
+        <state relative-caret-position="515">
+          <caret line="179" column="13" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

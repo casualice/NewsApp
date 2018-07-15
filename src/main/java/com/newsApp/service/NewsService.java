@@ -2,6 +2,10 @@ package com.newsApp.service;
 
 import com.newsApp.common.JsonData;
 import com.newsApp.dto.LabelAndAreaNo;
+import com.newsApp.entity.NewsParam;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 public interface NewsService {
     JsonData getNews(LabelAndAreaNo labelAndAreaNo);
@@ -11,4 +15,10 @@ public interface NewsService {
     JsonData like(int newsNo,int userNo);
 
     JsonData getOne(int NewsNo);
+
+    List<NewsParam> getNewsParam(LabelAndAreaNo labelAndAreaNo);
+
+    NewsParam getOneNews(int id);
+
+    void deleteNews(int newsNo);
 }

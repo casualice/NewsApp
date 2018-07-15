@@ -27,6 +27,7 @@ D:\NewsApp\src\main\java\com\newsApp\common\AbstractPage.java
 D:\NewsApp\src\main\java\com\newsApp\common\enums\PayKind.java
 D:\NewsApp\src\main\java\com\newsApp\dao\LabelIncludeDao.java
 D:\NewsApp\src\main\java\com\newsApp\controller\AreaController.java
+D:\NewsApp\src\main\java\com\newsApp\controller\SysController.java
 D:\NewsApp\src\main\java\com\newsApp\entity\NewsParam.java
 D:\NewsApp\src\main\java\com\newsApp\service\impl\UserServiceImpl.java
 D:\NewsApp\src\main\java\com\newsApp\common\JsonData.java

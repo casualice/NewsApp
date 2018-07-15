@@ -1,4 +1,7 @@
 spring:
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root

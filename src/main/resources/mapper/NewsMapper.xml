@@ -29,7 +29,7 @@
 
 
     <!-- single entity save -->
-    <select id="getNewsByNo" parameterType="java.lang.Integer" resultMap="resultMap">
+    <select id="getAllNews" parameterType="java.lang.Integer" resultMap="resultMap">
         select
         <include refid="columns"/>
         from

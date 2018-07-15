@@ -1,10 +1,12 @@
 package com.newsApp.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
 @Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class LabelAndAreaNo {
     private int areaNo;
     private int labelNo;

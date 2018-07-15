@@ -32,7 +32,6 @@ public class NewsServiceImpl implements NewsService {
     LabelDao labelDao;
 
     @Override
-    @Transactional
     public JsonData getNews(LabelAndAreaNo labelAndAreaNo) {
         List<News> news = new LinkedList<>();
         try{
@@ -128,4 +127,61 @@ public class NewsServiceImpl implements NewsService {
         }
         return JsonData.fail("获取新闻详情失败！");
     }
+
+    @Override
+    public List<NewsParam> getNewsParam(LabelAndAreaNo labelAndAreaNo) {
+        List<News> news = new LinkedList<>();
+        try{
+            news = newsDao.getAllNews();
+            List<NewsParam> newsParams = new LinkedList<NewsParam>();
+            Iterator iterator = news.iterator();
+            while (iterator.hasNext()){
+                News n = (News) iterator.next();
+                NewsParam newsParam = NewsParam.builder().
+                        newsIntro(n.getNewsIntro()).
+                        newsNo(n.getNewsNo()).
+                        newsSource(n.getNewsSource()).newsTitle(n.getNewsTitle())
+                        .newsUrl(n.getNewsUrl()).build();
+                newsParam.setLikeNum(newsLikeDao.likeCount(n.getNewsNo()));
+                newsParam.setNewsAreaNo(areaIncludeDao.getByNewsNo(n.getNewsNo()).getAreaNo());
+                newsParam.setNewsLabelNo(labelIncludeDao.getByNewsNo(n.getNewsNo()).getLabelNo());
+                newsParam.setLabelName(labelDao.getLabel(newsParam.getNewsLabelNo()));
+                newsParam.setAreaName(areaDao.getArea(newsParam.getNewsAreaNo()));
+                newsParams.add(newsParam);
+            }
+            return newsParams;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public NewsParam getOneNews(int id) {
+        News news = newsDao.getNewsById(id);
+        NewsParam newsParam = NewsParam.builder().
+                newsIntro(news.getNewsIntro()).
+                newsNo(news.getNewsNo()).
+                newsSource(news.getNewsSource()).newsTitle(news.getNewsTitle())
+                .newsUrl(news.getNewsUrl()).build();
+        newsParam.setNewsLabelNo(labelIncludeDao.getByNewsNo(news.getNewsNo()).getLabelNo());
+        newsParam.setLabelName(labelDao.getLabel(newsParam.getNewsLabelNo()));
+        return newsParam;
+    }
+
+    @Override
+    @Transactional
+    public void deleteNews(int newsNo) {
+        try {
+            News news = newsDao.getNewsById(newsNo);
+            if (news!=null){
+                labelIncludeDao.delete(newsNo);
+                newsDao.deleteById(newsNo);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
 }
