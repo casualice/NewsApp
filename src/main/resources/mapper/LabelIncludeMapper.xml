@@ -52,10 +52,20 @@
         from
         <include refid="tableName"/>
     </select>
-    <!--<delete id="deleteByUserNo" parameterType="java.lang.Integer">-->
-    <!--DELETE FROM-->
-    <!--<include refid="tableName"/>-->
-    <!--WHERE UserNo=#{userNo}-->
-    <!--</delete>-->
+
+    <delete id="delete" parameterType="java.lang.Integer">
+    DELETE FROM
+    <include refid="tableName"/>
+    WHERE NewsNo=#{newsNo}
+    </delete>
+
+    <update id="update">
+        update
+        <include refid="tableName"/>
+        set
+        LabelNo = #{labelNo}
+        where
+        NewsNo=#{newsNo}
+    </update>
 
 </mapper>

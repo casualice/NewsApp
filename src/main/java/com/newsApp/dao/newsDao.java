@@ -1,5 +1,6 @@
 package com.newsApp.dao;
 
+import com.newsApp.dto.NewsUpdateDto;
 import com.newsApp.entity.News;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -13,7 +14,7 @@ public interface newsDao {
 
     void addNews(@Param("news") News news);
 
-    void updateNews(News news);
+    void updateNews(NewsUpdateDto news);
 
     News getNewsById(int id);
 

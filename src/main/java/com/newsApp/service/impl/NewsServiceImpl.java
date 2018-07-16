@@ -3,6 +3,7 @@ package com.newsApp.service.impl;
 import com.newsApp.common.JsonData;
 import com.newsApp.dao.*;
 import com.newsApp.dto.LabelAndAreaNo;
+import com.newsApp.dto.NewsUpdateDto;
 import com.newsApp.entity.*;
 import com.newsApp.service.NewsService;
 import org.springframework.stereotype.Service;
@@ -178,6 +179,19 @@ public class NewsServiceImpl implements NewsService {
                 labelIncludeDao.delete(newsNo);
                 newsDao.deleteById(newsNo);
             }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    @Transactional
+    public void updateNews(NewsUpdateDto news) {
+        try {
+            int newsNo = news.getNewsNO();
+            int labelNo = labelDao.getByName(news.getNewsLable()).getLabelNo();
+            newsDao.updateNews(news);
+            labelIncludeDao.update(newsNo,labelNo);
         }catch (Exception e){
             e.printStackTrace();
         }

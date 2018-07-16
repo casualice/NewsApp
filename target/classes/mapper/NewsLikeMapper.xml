@@ -34,7 +34,7 @@
         from
         <include refid="tableName"/>
         where
-        UserNo = #{userNo}
+        NewsNo = #{newsNo}
     </select>
 
 </mapper>

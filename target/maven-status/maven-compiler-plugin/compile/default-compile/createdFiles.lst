@@ -19,6 +19,7 @@ com\newsApp\common\TailPage.class
 com\newsApp\entity\News$NewsBuilder.class
 com\newsApp\common\enums\PayKind.class
 com\newsApp\dao\NewsLikeDao.class
+com\newsApp\dto\LabelAndAreaNo$LabelAndAreaNoBuilder.class
 com\newsApp\entity\labelChoose.class
 com\newsApp\entity\areaChoose.class
 com\newsApp\service\impl\AreaServiceImpl.class
@@ -49,6 +50,7 @@ com\newsApp\entity\User.class
 com\newsApp\entity\NewsParam$NewsParamBuilder.class
 com\newsApp\common\JsonData.class
 com\newsApp\entity\AreaInclude$AreaIncludeBuilder.class
+com\newsApp\dto\NewsUpdateDto.class
 com\newsApp\dao\AreaDao.class
 com\newsApp\entity\LabelInclude$LabelIncludeBuilder.class
 com\newsApp\common\enums\ResultCode.class

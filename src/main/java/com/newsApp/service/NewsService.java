@@ -2,6 +2,8 @@ package com.newsApp.service;
 
 import com.newsApp.common.JsonData;
 import com.newsApp.dto.LabelAndAreaNo;
+import com.newsApp.dto.NewsUpdateDto;
+import com.newsApp.entity.News;
 import com.newsApp.entity.NewsParam;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,4 +23,6 @@ public interface NewsService {
     NewsParam getOneNews(int id);
 
     void deleteNews(int newsNo);
+
+    void updateNews(NewsUpdateDto news);
 }

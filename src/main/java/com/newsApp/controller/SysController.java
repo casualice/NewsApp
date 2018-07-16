@@ -60,8 +60,14 @@ public class SysController {
         return "updatePage";
     }
 
-    @RequestMapping("/delete")
-    public void delete(int newsNo){
+    @RequestMapping(value = {"/delete"},method = RequestMethod.POST)
+    public String delete(int newsNo){
         newsService.deleteNews(newsNo);
+        return "forward:/table";
+    }
+
+    @RequestMapping(value = {"/updateNews"},method = RequestMethod.POST)
+    public String updateNews(){
+        return "forward:/updatePage";
     }
 }

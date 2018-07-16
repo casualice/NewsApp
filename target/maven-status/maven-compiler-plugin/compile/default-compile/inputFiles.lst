@@ -1,5 +1,6 @@
 D:\NewsApp\src\main\java\com\newsApp\entity\LabelInclude.java
 D:\NewsApp\src\main\java\com\newsApp\dao\NewsLikeDao.java
+D:\NewsApp\src\main\java\com\newsApp\dto\NewsUpdateDto.java
 D:\NewsApp\src\main\java\com\newsApp\entity\User.java
 D:\NewsApp\src\main\java\com\newsApp\entity\newsLike.java
 D:\NewsApp\src\main\java\com\newsApp\service\UserService.java

@@ -58,10 +58,10 @@
         update
         <include refid="tableName"/>
         set
-        NewsTitle=#{news.newsTitle},
-        NewsURL=#{news.newsUrl},
-        NewsSource=#{news.newsSource},
-        NewsIntro=#{news.newsIntro}
+        NewsTitle=#{news.NewsTitle},
+        NewsIntro=#{news.NewsIntro}
+        where
+        NewsNo = #{news.NewsNo}
     </update>
 
     <select id="getNewsById" parameterType="java.lang.Integer" resultMap="resultMap">
@@ -97,5 +97,6 @@
         </if>
         LIMIT #{page.startIndex,jdbcType=INTEGER},#{page.pageSize,jdbcType=INTEGER}
     </select>
+
 
 </mapper>
