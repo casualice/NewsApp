@@ -10,6 +10,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.*;
 
 @Service("NewsService")
@@ -195,6 +199,31 @@ public class NewsServiceImpl implements NewsService {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public JsonData newsDetail(int newsNo) {
+        try {
+            String fileName = "/root/apache-tomcat-8.5.16/webapps/News/news_"+newsNo+".txt";
+            File file=new File(fileName);
+            if(file.isFile() && file.exists()){ //判断文件是否存在
+                InputStreamReader read = new InputStreamReader(
+                        new FileInputStream(file));//考虑到编码格式
+                BufferedReader bufferedReader = new BufferedReader(read);
+                String lineTxt = null;
+                StringBuilder text = new StringBuilder();
+                while((lineTxt = bufferedReader.readLine()) != null){
+                    text.append(lineTxt);
+                }
+                read.close();
+                return JsonData.success(text,"获取新闻详情成功！");
+            }else{
+                System.out.println("找不到指定的文件");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+            return JsonData.fail("获取新闻详情失败！");
     }
 
 

@@ -25,4 +25,6 @@ public interface NewsService {
     void deleteNews(int newsNo);
 
     void updateNews(NewsUpdateDto news);
+
+    JsonData newsDetail(int newsNo);
 }

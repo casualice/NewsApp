@@ -23,7 +23,7 @@ public class NewsController {
         return newsService.getNews(labelAndAreaNo);
     }
 
-    @ApiOperation(value = "分享与跳转接口，返回新闻详情路径")
+    @ApiOperation(value = "分享接口，返回新闻详情路径")
     @RequestMapping(value = {"/share"}, method = RequestMethod.GET)
     @ResponseBody
     public JsonData shareNews(int newsNo){
@@ -41,5 +41,12 @@ public class NewsController {
     @ResponseBody
     public JsonData getOneNews(int NewsNo){
         return newsService.getOne(NewsNo);
+    }
+
+    @ApiOperation(value = "新闻详情接口")
+    @RequestMapping(value = {"/NewsDetail"}, method = RequestMethod.GET)
+    @ResponseBody
+    public JsonData NewsDetail(int newsNo){
+        return newsService.newsDetail(newsNo);
     }
 }
